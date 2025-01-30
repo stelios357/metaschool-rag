@@ -36,8 +36,8 @@ We’re making these projects open-source because we know we can’t build world
 
 Make sure you have a supported Python version and a valid OPENAI_API_KEY (if you’re using OpenAI embeddings).
 	2.	Set Up the Folder Structure
-	•	Create a folder called Learning_Projects at the same level as the main Python script.
-	•	Each course should be a subfolder, with nested .md files.
+	-	Create a folder called Learning_Projects at the same level as the main Python script.
+	-	Each course should be a subfolder, with nested .md files.
 	3.	Run the System
 
 python rag_system.py
