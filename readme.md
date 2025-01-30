@@ -1,6 +1,3 @@
-Here's the markdown version of your README:
-
-```markdown
 # RAG-Based Course Recommendation System
 
 ## Overview
