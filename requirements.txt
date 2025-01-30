@@ -1,0 +1,9 @@
+langchain
+openai
+chromadb
+textwrap3
+langchain-community
+tiktoken
+langchain-openai
+langchain-chroma
+tqdm
