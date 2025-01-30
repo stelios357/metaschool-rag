@@ -1,60 +1,111 @@
-# 🔮 Metaschool RAG Recommender
+Here's the markdown version of your README:
 
+```markdown
+# RAG-Based Course Recommendation System
 
-Learn, Build & Ship amazing Web3 Projects with Metaschool! 🚀🚀  
-PRs are welcome! Our vision is to enable the next 10M developers to enter the web3 space by producing free, cool, and exciting projects.
+## Overview
 
----
+This repository contains a RAG (Retrieval-Augmented Generation) based course recommendation system. The system takes user queries related to learning topics and provides course recommendations with relevant snippets, learning outcomes, and target audience details.
 
-## 👋 Welcome
+## Installation
 
-This repository provides a *Retrieval-Augmented Generation (RAG)* pipeline for recommending Metaschool courses based on a user’s query. It uses [LangChain](https://github.com/hwchase17/langchain) to index course content and return the *top course recommendations* when users ask what they’d like to learn next.
+### Prerequisites
 
-We discuss all sorts of topics in our Discord, and we’d love for you to learn and participate there. **[Join our Discord](https://discord.com/invite/metaschool)** to keep building with us.
+- Python 3.x
+- pip (Python package manager)
 
----
+### Install Dependencies
 
-## 🔮 Learning Projects
+To install the necessary dependencies, run the following command:
 
-You can start with the following Metaschool courses right away (just examples):
-- *Write your first Hello World contract*  
-- *Mint an Elon Musk NFT*  
-- *Create a Horoscope Web3 NFT Application*  
-- *Launch your epic NFT marketplace*
+```bash
+pip install -r requirements.txt
+```
 
-This RAG system helps you find the right course for your needs by searching through all available course content, so you don’t have to guess which one to pick.
+## Usage
 
-We’re making these projects open-source because we know we can’t build world-class learning experiences without your support. If you see an error or have an improvement, please submit a pull request.
+Run the script with:
 
----
-
-## 📖 How to Use
-
-1. *Install Dependencies*  
-   ```bash
-   pip install -r requirements.txt
-
-Make sure you have a supported Python version and a valid OPENAI_API_KEY (if you’re using OpenAI embeddings).
-	2.	Set Up the Folder Structure
-	-	Create a folder called Learning_Projects at the same level as the main Python script.
-	-	Each course should be a subfolder, with nested .md files.
-	3.	Run the System
-
+```bash
 python rag_system.py
+```
 
-Type your query when prompted (e.g., I want to learn Solidity) and watch the magic happen!
+Then, input your learning topic, and the system will generate relevant course recommendations.
 
-🤝 Want to Contribute?
-	1.	Fork this repo and clone it locally.
-	2.	Make your changes (fix bugs, add courses, enhance the RAG pipeline).
-	3.	Push your changes and submit a Pull Request.
-	4.	Wait for review & merge!
+## Example Inputs and Outputs
 
-If you’re new to open-source, check out this short guide on how to contribute effectively.
+### Example 1
 
-✨ Contributors
+**Input:**
+```
+Ask: I want to learn smart contract security
+```
 
-Thanks go to all these wonderful people:
-	•	[Aman Jain](https://github.com/stelios357)
+**Output:**
+```
+--- Recommendations for: "I want to learn smart contract security" ---
 
-Contributions of any kind are welcome! Feel free to open issues or PRs for improvements, bug fixes, or feature requests. Let’s build the future of Web3 learning together!
+* Recommendation #1: Start Building on Core *
+Snippet Preview: # Writing Secure Smart Contracts Welcome back, buddy! We love how you are being so great and...
+
+- This course specifically focuses on smart contract security
+- Key learning outcomes: understanding common vulnerabilities, avoiding them, implementing best practices
+- Recommended for intermediate developers with smart contract knowledge
+--------------------------------------------------
+... (other recommendations)
+```
+
+### Example 2
+
+**Input:**
+```
+Ask: Recommend courses for NFT development
+```
+
+**Output:**
+```
+--- Recommendations for: "Recommend courses for NFT development" ---
+
+* Recommendation #1: Core C3 Launching a 10K NFT collection on Core *
+Snippet Preview: Here's a simplified roadmap for creating your 10,000 NFT collection...
+--------------------------------------------------
+... (other recommendations)
+```
+
+### Example 3
+
+**Input:**
+```
+Ask: quit
+```
+
+**Output:**
+```
+Exiting...
+```
+
+## Features
+
+- Accepts natural language queries
+- Retrieves and presents course recommendations
+- Provides snippets, learning outcomes, and audience suitability
+
+## Future Improvements
+
+- Enhance recommendation accuracy with advanced retrieval models
+- Add filtering options based on user expertise level
+- Integrate with external APIs for real-time course updates
+
+## License
+
+This project is open-source and available under the [MIT License](LICENSE).
+``` 
+
+I've structured it with proper markdown formatting, including:
+- Headers with #
+- Code blocks with triple backticks
+- Bold text for input/output labels
+- Bullet lists for features and improvements
+- Consistent spacing and section organization
+
+You can copy this directly into your README.md file. Let me know if you need any adjustments!
